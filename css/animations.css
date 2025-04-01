@@ -1,0 +1,299 @@
+/* 滚动驱动动画 */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 视差滚动效果 */
+.parallax-section .parallax-bg {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* 微交互效果 */
+/* 导航链接悬停效果 */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+/* 按钮悬停效果 */
+.btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn:hover::before {
+    width: 300%;
+    height: 300%;
+}
+
+/* 卡片悬停效果 */
+.glass-card {
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 图片悬停缩放效果 */
+.timeline-img-container img, .gallery-item img, .video-placeholder img {
+    transition: transform 0.5s ease;
+}
+
+.timeline-img-container:hover img, .gallery-item:hover img, .video-placeholder:hover img {
+    transform: scale(1.05);
+}
+
+/* 播放按钮悬停效果 */
+.play-button {
+    transition: all 0.3s ease;
+}
+
+.video-placeholder:hover .play-button {
+    transform: translate(-50%, -50%) scale(1.1);
+    background-color: var(--primary-color);
+}
+
+/* 图标悬停效果 */
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px) rotate(5deg);
+}
+
+/* 移动菜单动画 */
+.mobile-toggle span {
+    transition: all 0.3s ease;
+}
+
+.mobile-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* 主题切换动画 */
+.theme-toggle {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(180deg);
+}
+
+.theme-toggle i {
+    transition: all 0.3s ease;
+}
+
+/* 加载动画 */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+.dark-mode .loading {
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-top: 4px solid var(--primary-color);
+}
+
+/* 淡入淡出动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* 脉冲动画 */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* 页面过渡动画 */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    z-index: 9999;
+    transform: translateY(100%);
+    transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.page-transition.active {
+    transform: translateY(0);
+}
+
+.page-transition.exit {
+    transform: translateY(-100%);
+}
+
+/* 3D卡片效果 */
+.card-3d-container {
+    perspective: 1000px;
+}
+
+.card-3d {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-3d-container:hover .card-3d {
+    transform: rotateY(10deg) rotateX(5deg);
+}
+
+/* 流体动画 */
+@keyframes wave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.wave-bg {
+    background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color), #2c7fb8, #28a745);
+    background-size: 400% 400%;
+    animation: wave 15s ease infinite;
+}
+
+/* 打字机效果 */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--primary-color);
+    }
+}
+
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid var(--primary-color);
+    width: 0;
+    animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* 滚动指示器动画 */
+@keyframes scrollIndicator {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background-color: var(--primary-color);
+    z-index: 9999;
+    animation: scrollIndicator 1s linear forwards;
+}
+
+/* 音频反馈控制 */
+.audio-feedback {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
+} 

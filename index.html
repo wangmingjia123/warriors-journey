@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金州勇士队 - 冠军之路</title>
+    <!-- 先加载关键CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 异步加载非关键资源 -->
+    <link rel="stylesheet" href="css/animations.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" media="print" onload="this.media='all'">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <!-- 预加载音效 -->
+    <link rel="preload" href="assets/audios/hover.mp3" as="audio">
+    <link rel="preload" href="assets/audios/click.mp3" as="audio">
+    <!-- 添加关键图片预加载 -->
+    <link rel="preload" href="assets/images/championship-2022.jpg" as="image">
+</head>
+<body class="light-mode">
+    <div class="theme-toggle" role="button" aria-label="切换主题模式" title="切换明暗主题">
+        <i class="ri-sun-line light-icon"></i>
+        <i class="ri-moon-line dark-icon"></i>
+    </div>
+
+    <!-- 顶部导航栏 -->
+    <header class="glass-nav">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/487403632_18499486201014777_990447769166373530_n.jpg" alt="勇士队标志" title="金州勇士队标志" width="40" height="40">
+                <h1>金州勇士</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#dynasty" class="nav-link">王朝历程</a></li>
+                    <li><a href="#stars" class="nav-link">巨星风采</a></li>
+                    <li><a href="#moments" class="nav-link">经典时刻</a></li>
+                    <li><a href="#culture" class="nav-link">团队文化</a></li>
+                    <li><a href="#gallery" class="nav-link">荣耀图库</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle" role="button" aria-label="切换移动端菜单" title="切换移动端菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区域，视差滚动效果 -->
+    <section class="hero parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="hero-content">
+            <h1 class="animate-on-scroll">金州勇士 - 冠军之路</h1>
+            <p class="animate-on-scroll delay-1">见证一支伟大球队的传奇故事</p>
+            <a href="#dynasty" class="btn primary-btn animate-on-scroll delay-2">开始探索</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动</span>
+            <i class="ri-arrow-down-line"></i>
+        </div>
+    </section>
+
+    <!-- 王朝历程 -->
+    <section id="dynasty" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">王朝历程</h2>
+            <div class="timeline">
+                <div class="timeline-item left animate-on-scroll">
+                    <div class="timeline-content glass-card">
+                        <h3>2014-2015赛季</h3>
+                        <p>勇士队在史蒂夫·科尔的带领下，以67胜15负的战绩夺得常规赛冠军，随后在总决赛中击败克利夫兰骑士队，获得球队40年来的首个NBA总冠军。</p>
+                        <div class="timeline-img-container">
+                            <img src="assets/images/championship-2015.jpg" alt="2015年勇士队夺冠庆祝照片" title="2015年勇士队夺得总冠军" width="800" height="533" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item right animate-on-scroll">
+                    <div class="timeline-content glass-card">
+                        <h3>2016-2017赛季</h3>
+                        <p>凯文·杜兰特加入勇士队，球队以67胜15负的战绩再次夺得常规赛冠军，随后在总决赛中以4-1击败骑士队，杜兰特获得FMVP。</p>
+                        <div class="timeline-img-container">
+                            <img src="assets/images/championship-2017.jpg" alt="2017年勇士队夺冠庆祝照片" title="2017年勇士队夺得总冠军" width="800" height="533" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item left animate-on-scroll">
+                    <div class="timeline-content glass-card">
+                        <h3>2017-2018赛季</h3>
+                        <p>勇士队再次在总决赛中以4-0横扫骑士队，杜兰特连续第二年获得FMVP，勇士队成功卫冕。</p>
+                        <div class="timeline-img-container">
+                            <img src="assets/images/championship-2018.jpg" alt="2018年勇士队夺冠庆祝照片" title="2018年勇士队夺得总冠军" width="800" height="533" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item right animate-on-scroll">
+                    <div class="timeline-content glass-card">
+                        <h3>2021-2022赛季</h3>
+                        <p>经历伤病和重建后，勇士队再次崛起，在总决赛中以4-2击败波士顿凯尔特人队，库里首次获得FMVP，勇士队获得第7个总冠军。</p>
+                        <div class="timeline-img-container">
+                            <img src="assets/images/championship-2022.jpg" alt="2022年勇士队夺冠庆祝照片" title="2022年勇士队夺得总冠军" width="800" height="533" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 巨星风采 -->
+    <section id="stars" class="section parallax-section">
+        <div class="parallax-bg stars-bg"></div>
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">巨星风采</h2>
+            <div class="cards-container">
+                <div class="player-card glass-card animate-on-scroll">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/images/curry.jpg" alt="斯蒂芬·库里肖像" title="斯蒂芬·库里" width="300" height="400" loading="lazy">
+                                <h3>斯蒂芬·库里</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>斯蒂芬·库里</h3>
+                                <p>四次NBA总冠军，两次常规赛MVP，一次总决赛MVP，历史三分王，改变了现代篮球的打法。</p>
+                                <div class="player-stats">
+                                    <span>球衣号码: 30</span>
+                                    <span>位置: 控球后卫</span>
+                                    <span>选秀: 2009年首轮第7位</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-card glass-card animate-on-scroll delay-1">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/images/thompson.jpg" alt="克莱·汤普森肖像" title="克莱·汤普森" width="300" height="400" loading="lazy">
+                                <h3>克莱·汤普森</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>克莱·汤普森</h3>
+                                <p>四次NBA总冠军，"水花兄弟"组合成员，单场14个三分球纪录保持者，出色的三分射手和防守者。</p>
+                                <div class="player-stats">
+                                    <span>球衣号码: 11</span>
+                                    <span>位置: 得分后卫</span>
+                                    <span>选秀: 2011年首轮第11位</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-card glass-card animate-on-scroll delay-2">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/images/487831003_18499487467014777_6767737014427988215_n.jpg" alt="德雷蒙德·格林肖像" title="德雷蒙德·格林" width="300" height="400" loading="lazy">
+                                <h3>德雷蒙德·格林</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>德雷蒙德·格林</h3>
+                                <p>四次NBA总冠军，多次入选最佳防守阵容，球队的防守核心和组织进攻的关键。</p>
+                                <div class="player-stats">
+                                    <span>球衣号码: 23</span>
+                                    <span>位置: 大前锋</span>
+                                    <span>选秀: 2012年次轮第35位</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-card glass-card animate-on-scroll">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/images/487298876_18499489933014777_4747727992982087855_n.jpg" alt="凯文·杜兰特肖像" title="凯文·杜兰特" width="300" height="400" loading="lazy">
+                                <h3>凯文·杜兰特</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>凯文·杜兰特</h3>
+                                <p>两次NBA总冠军（勇士队），两次总决赛MVP，2014年常规赛MVP，得分王。勇士王朝时期关键一员。</p>
+                                <div class="player-stats">
+                                    <span>球衣号码: 35</span>
+                                    <span>位置: 小前锋</span>
+                                    <span>选秀: 2007年首轮第2位</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-card glass-card animate-on-scroll delay-1">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/images/484887946_18496422475014777_1919951888575644348_n.jpg" alt="安德烈·伊戈达拉肖像" title="安德烈·伊戈达拉" width="300" height="400" loading="lazy">
+                                <h3>安德烈·伊戈达拉</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>安德烈·伊戈达拉</h3>
+                                <p>四次NBA总冠军，2015年总决赛MVP，勇士队"死亡五小"阵容成员，关键时刻的防守专家。</p>
+                                <div class="player-stats">
+                                    <span>球衣号码: 9</span>
+                                    <span>位置: 小前锋/得分后卫</span>
+                                    <span>选秀: 2004年首轮第9位</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-card glass-card animate-on-scroll delay-2">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/images/487672141_18499488556014777_2099651613525646903_n.jpg" alt="安德鲁·维金斯肖像" title="安德鲁·维金斯" width="300" height="400" loading="lazy">
+                                <h3>安德鲁·维金斯</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>安德鲁·维金斯</h3>
+                                <p>2022年NBA总冠军，全明星首发球员，2022年总决赛中的关键防守球员，负责盯防对方最强得分手。</p>
+                                <div class="player-stats">
+                                    <span>球衣号码: 22</span>
+                                    <span>位置: 小前锋</span>
+                                    <span>选秀: 2014年首轮第1位</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 经典时刻 -->
+    <section id="moments" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">经典时刻</h2>
+            <div class="moments-grid">
+                <div class="moment-card glass-card animate-on-scroll">
+                    <div class="moment-video">
+                        <div class="video-placeholder" data-video="klay-60-points">
+                            <img src="assets/images/487907629_18499430464014777_7340214977006789233_n.jpg" alt="克莱·汤普森60分表现" title="克莱·汤普森单场60分" width="640" height="360" loading="lazy">
+                            <div class="play-button" role="button" aria-label="播放克莱·汤普森60分视频" title="点击播放视频"><i class="ri-play-fill"></i></div>
+                        </div>
+                    </div>
+                    <div class="moment-info">
+                        <h3>汤普森三节60分</h3>
+                        <p>2016年12月5日，克莱·汤普森在对阵步行者的比赛中，仅用29分钟就砍下60分，创造NBA历史纪录。</p>
+                    </div>
+                </div>
+                <div class="moment-card glass-card animate-on-scroll delay-1">
+                    <div class="moment-video">
+                        <div class="video-placeholder" data-video="curry-game-winner">
+                            <img src="assets/images/485427527_18497495614014777_6244917963307189682_n.jpg" alt="库里对雷霆制胜三分" title="库里超远距离制胜三分" width="640" height="360" loading="lazy">
+                            <div class="play-button" role="button" aria-label="播放库里对雷霆制胜三分视频" title="点击播放视频"><i class="ri-play-fill"></i></div>
+                        </div>
+                    </div>
+                    <div class="moment-info">
+                        <h3>库里超远距离制胜三分</h3>
+                        <p>2016年2月27日，库里在加时赛最后时刻投中超远距离三分，帮助勇士队战胜雷霆队。</p>
+                    </div>
+                </div>
+                <div class="moment-card glass-card animate-on-scroll delay-2">
+                    <div class="moment-video">
+                        <div class="video-placeholder" data-video="durant-three">
+                            <img src="assets/images/484414291_18496425220014777_418771923761062653_n.jpg" alt="杜兰特总决赛三分" title="杜兰特总决赛关键三分" width="640" height="360" loading="lazy">
+                            <div class="play-button" role="button" aria-label="播放杜兰特总决赛关键三分视频" title="点击播放视频"><i class="ri-play-fill"></i></div>
+                        </div>
+                    </div>
+                    <div class="moment-info">
+                        <h3>杜兰特总决赛关键三分</h3>
+                        <p>2017年总决赛G3，杜兰特在最后时刻投中关键三分，为勇士队锁定胜局。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more-container">
+                <button id="load-more-moments" class="btn secondary-btn animate-on-scroll" aria-label="加载更多经典时刻" title="加载更多经典时刻">加载更多</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队文化 -->
+    <section id="culture" class="section parallax-section">
+        <div class="parallax-bg culture-bg"></div>
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">团队文化</h2>
+            <div class="culture-content">
+                <div class="culture-text glass-card animate-on-scroll">
+                    <h3>勇士精神</h3>
+                    <p>金州勇士队以"Strength in Numbers"（人多力量大）为团队口号，强调团队合作、无私奉献和共同成长的价值观。球队文化强调快乐篮球、移动传切和空间投射，同时注重防守端的灵活性和多样性。</p>
+                    <p>勇士队的成功不仅源于球员的才华，更源于强大的组织文化和清晰的战略愿景。从管理层到教练组再到球员，每个人都扮演着重要角色，共同打造了这支现代篮球的标杆队伍。</p>
+                    
+                    <h3 class="culture-subtitle">快乐篮球</h3>
+                    <p>勇士队的"快乐篮球"理念由史蒂夫·科尔教练引入，强调球员在场上享受比赛的过程，而不仅仅关注结果。这种乐观的态度不仅提升了球员的士气，也让整个团队在逆境中保持韧性。</p>
+                    
+                    <h3 class="culture-subtitle">团队至上</h3>
+                    <p>尽管拥有众多超级球星，勇士队始终将团队利益置于个人成就之上。无私的传球、积极的掩护和默契的配合成为球队的标志性特点，也是他们能够在高水平上持续取得成功的关键。</p>
+                </div>
+                <div class="culture-quotes">
+                    <div class="quote glass-card animate-on-scroll delay-1">
+                        <i class="ri-double-quotes-l"></i>
+                        <p>当你有机会做一些特别的事情，不要让任何人阻止你。</p>
+                        <div class="quote-author">— 斯蒂芬·库里</div>
+                    </div>
+                    <div class="quote glass-card animate-on-scroll delay-2">
+                        <i class="ri-double-quotes-l"></i>
+                        <p>无论你做什么，都要保持热情。热情会带来能量，能量会带来持久性。</p>
+                        <div class="quote-author">— 史蒂夫·科尔</div>
+                    </div>
+                    <div class="quote glass-card animate-on-scroll delay-1">
+                        <i class="ri-double-quotes-l"></i>
+                        <p>篮球从来不只是关于得分，而是关于为团队做正确的事。</p>
+                        <div class="quote-author">— 克莱·汤普森</div>
+                    </div>
+                    <div class="quote glass-card animate-on-scroll delay-2">
+                        <i class="ri-double-quotes-l"></i>
+                        <p>如果你想成为冠军，你就不能只关注个人荣誉。最重要的是球队的胜利。</p>
+                        <div class="quote-author">— 德雷蒙德·格林</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 核心价值观部分 -->
+            <div class="values-section animate-on-scroll">
+                <h3 class="values-title">勇士队核心价值观</h3>
+                <div class="values-container">
+                    <div class="value-card glass-card animate-on-scroll">
+                        <div class="value-icon"><i class="ri-team-fill"></i></div>
+                        <h4>团队协作</h4>
+                        <p>个人荣誉服从团队目标，共同努力实现最高成就。</p>
+                    </div>
+                    <div class="value-card glass-card animate-on-scroll delay-1">
+                        <div class="value-icon"><i class="ri-mental-health-fill"></i></div>
+                        <h4>积极心态</h4>
+                        <p>保持乐观态度，在逆境中展现韧性和决心。</p>
+                    </div>
+                    <div class="value-card glass-card animate-on-scroll delay-2">
+                        <div class="value-icon"><i class="ri-creative-fill"></i></div>
+                        <h4>创新精神</h4>
+                        <p>拥抱新思路和技术，不断推动篮球战术和理念的革新。</p>
+                    </div>
+                    <div class="value-card glass-card animate-on-scroll delay-3">
+                        <div class="value-icon"><i class="ri-shield-check-fill"></i></div>
+                        <h4>卓越标准</h4>
+                        <p>在所有方面都追求卓越，不满足于平庸表现。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 荣耀图库 -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">荣耀图库</h2>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all" aria-label="显示所有图片" title="显示所有图片">全部</button>
+                <button class="filter-btn" data-filter="championship" aria-label="仅显示总冠军相关图片" title="筛选冠军图片">总冠军</button>
+                <button class="filter-btn" data-filter="players" aria-label="仅显示球员相关图片" title="筛选球员图片">球员</button>
+                <button class="filter-btn" data-filter="moments" aria-label="仅显示比赛时刻相关图片" title="筛选比赛时刻图片">比赛时刻</button>
+            </div>
+            <div class="gallery-grid">
+                <!-- 图片将通过JS动态加载 -->
+            </div>
+            <div class="gallery-modal">
+                <span class="close-modal" role="button" aria-label="关闭图片查看器" title="关闭">&times;</span>
+                <img class="modal-content" id="gallery-modal-img" alt="图库大图展示" title="图库展示">
+                <div class="modal-caption"></div>
+                <button class="modal-prev" aria-label="查看上一张图片" title="上一张"><i class="ri-arrow-left-s-line"></i></button>
+                <button class="modal-next" aria-label="查看下一张图片" title="下一张"><i class="ri-arrow-right-s-line"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="glass-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/487807246_18499485217014777_176600611860028516_n.jpg" alt="勇士队标志" title="金州勇士队标志" width="50" height="50" loading="lazy">
+                    <h3>金州勇士</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#dynasty">王朝历程</a></li>
+                        <li><a href="#stars">巨星风采</a></li>
+                        <li><a href="#moments">经典时刻</a></li>
+                        <li><a href="#culture">团队文化</a></li>
+                        <li><a href="#gallery">荣耀图库</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>关注我们</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="访问我们的微博" title="微博"><i class="ri-weibo-fill"></i></a>
+                        <a href="#" class="social-icon" aria-label="访问我们的微信" title="微信"><i class="ri-wechat-fill"></i></a>
+                        <a href="#" class="social-icon" aria-label="访问我们的推特" title="推特"><i class="ri-twitter-fill"></i></a>
+                        <a href="#" class="social-icon" aria-label="访问我们的Instagram" title="Instagram"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 金州勇士队冠军之路 | 粉丝网站，非官方</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="返回页面顶部" title="返回顶部">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- JavaScript 文件 - 延迟加载并使用 defer -->
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+</body>
+</html> 
